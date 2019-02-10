@@ -38,9 +38,14 @@ public class Main {
         }
 
         //тело программы
-
+        int count=0;
         for (int i : secondArray) {
-            System.out.print(binarySearch(firstArray, i) + " ");
+            count++;
+            if (count == 1) {
+                System.out.print(binarySearch(firstArray, i));
+            } else {
+                System.out.print((" " + binarySearch(firstArray, i)));
+            }
         }
 
     }
